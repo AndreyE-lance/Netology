@@ -1,15 +1,23 @@
 package task332;
 
 public abstract class Account {
-    void pay(int amount) {
 
+    boolean pay(int amount) {
+
+        return false;
     }
 
-    void transfer(Account account, int amount){
+    boolean transfer(Account account, int amount){
 
+        return false;
     }
 
-    void addMoney(int amount){
+    boolean addMoney(int amount){
 
+        return false;
+    }
+
+    public int getBalance() {
+        return 0;
     }
 }
