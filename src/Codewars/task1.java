@@ -1,10 +1,5 @@
 package Codewars;
 
-import org.testng.annotations.Test;
-
-import java.sql.SQLOutput;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class task1 {
@@ -32,7 +27,7 @@ public class task1 {
         return stringBuilder.toString();
     }
 
-    @Test
+
     public static void main(String[] args) {
         System.out.println(task1.whoLikesIt());
         System.out.println(task1.whoLikesIt("Peter"));

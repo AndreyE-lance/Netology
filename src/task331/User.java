@@ -1,18 +1,17 @@
 package task331;
 
-public class User implements Supplier,Reader{
-    @Override
-    public void takeBook() {
+public class User {
+    private String name;
 
+    public User(String name) {
+        this.name = name;
     }
 
-    @Override
-    public void returnBook() {
-
+    public String getName() {
+        return name;
     }
 
-    @Override
-    public void deliveryBook() {
-
+    public void setName(String name) {
+        this.name = name;
     }
 }
