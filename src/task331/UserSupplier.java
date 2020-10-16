@@ -1,6 +1,6 @@
 package task331;
 
-public class UserSupplier extends User implements Supplier,Reader{
+public class UserSupplier extends User implements Supplier, Reader {
     public UserSupplier(String name) {
         super(name);
     }
@@ -17,6 +17,6 @@ public class UserSupplier extends User implements Supplier,Reader{
 
     @Override
     public void deliveryBook(Librarian librarian) {
-        System.out.println("Поставщик "+ getName()+ " доставил книги.");
+        System.out.println("Поставщик " + getName() + " доставил книги.");
     }
 }

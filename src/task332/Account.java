@@ -1,23 +1,24 @@
 package task332;
 
 public abstract class Account {
-
+    private int balance;
     boolean pay(int amount) {
-
-        return false;
+        this.balance-=amount;
+        return true;
     }
 
     boolean transfer(Account account, int amount){
-
-        return false;
+        account.balance+=amount;
+        this.balance-=amount;
+        return true;
     }
 
     boolean addMoney(int amount){
-
+        balance+=amount;
         return false;
     }
 
     public int getBalance() {
-        return 0;
+        return balance;
     }
 }
