@@ -2,16 +2,14 @@ package task342;
 
 public class Main {
     public static Movie[] getMovies() {
-        return new Movie[]{
-                new Movie("Начало", 2010, 16),
+        return new Movie[]{new Movie("Начало", 2010, 16),
                 new Movie("Олдбой", 2003, 18),
                 new Movie("Унесенные ветром", 1939, 16)
         };
     }
 
     public static Theatre[] getTheatres() {
-        return new Theatre[]{
-                new Theatre("Анна Каренина", 2017, 16),
+        return new Theatre[]{new Theatre("Анна Каренина", 2017, 16),
                 new Theatre("Макбет", 2020, 18),
                 new Theatre("Золотой ключик", 2019, 3)
         };

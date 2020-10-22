@@ -3,39 +3,23 @@ package task332;
 import java.math.BigDecimal;
 
 public class CheckingAccount extends Account {
-    private int balance;
+
     public CheckingAccount(int balance) {
-        this.balance = balance;
+        super(balance);
     }
 
     @Override
     boolean pay(int amount) {
         if (amount <= this.balance) {
-            this.balance -= amount;
-            return true;
+            return super.pay(amount);
         } else return false;
     }
-
-
 
     @Override
     boolean transfer(Account account, int amount) {
         if (amount <= this.balance) {
-            if (account.addMoney(amount)) {
-                this.balance -= amount;
-                return true;
-            } else return false;
+            return super.transfer(account,amount);
         } else return false;
-    }
-
-    @Override
-    boolean addMoney(int amount) {
-        this.balance+=amount;
-        return true;
-    }
-
-    public int getBalance() {
-        return balance;
     }
 
 }

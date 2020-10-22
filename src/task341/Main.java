@@ -17,26 +17,22 @@ public class Main {
             if (user.getLogin().equals(login) && user.getPassword().equals(password))
                 return user;
         }
-        throw new UserNotFoundException("User not found");
+        throw new UserNotFoundException(login);
     }
 
     public static void validateUser(User user) throws AccessDeniedException {
         if (user.getAge() < 18)
-            throw new AccessDeniedException("Возвращайся, когда подрастешь, " + user.getLogin());
+            throw new AccessDeniedException(user.getAge());
     }
 
     public static void main(String[] args) throws UserNotFoundException, AccessDeniedException {
-
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Введите логин");
         String login = scanner.nextLine();
         System.out.println("Введите пароль");
         String password = scanner.nextLine();
-
         User user = getUserByLoginAndPassword(login, password);
         validateUser(user);
-
         System.out.println("Доступ представлен");
     }
 }
