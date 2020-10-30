@@ -21,7 +21,17 @@ public class Employee {
 
     @Override
     public String toString() {
-        return String.format("%-11s %-7s %-7d %-7s %-11s %-11s %-10s", surname,name,age,sex,background,position,department);
+        return String.format("%-11s %-7s %-7d %-7s %-11s %-11s %-10s", surname, name, age, sex, background, position, department);
+    }
+
+    public String forChangeString() {
+        return "1. " + surname +
+                "\n2. " + name +
+                "\n3. " + age +
+                "\n4. " + sex +
+                "\n5. " + background +
+                "\n6. " + position +
+                "\n7. " + department;
     }
 
     public String getSurname() {
