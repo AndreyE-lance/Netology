@@ -1,7 +1,7 @@
 package task431;
 
 
-public class Contact implements Comparable<Contact>{
+public class Contact implements Comparable<Contact> {
     public String getName() {
         return name;
     }
@@ -16,14 +16,13 @@ public class Contact implements Comparable<Contact>{
 
     @Override
     public String toString() {
-        return  "Имя: " + name +
+        return "Имя: " + name +
                 ", Телефон: " + phoneNumber;
     }
 
 
     @Override
     public int compareTo(Contact o) {
-
         return name.compareTo(o.getName());
     }
 }

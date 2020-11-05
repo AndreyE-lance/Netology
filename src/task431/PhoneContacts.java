@@ -45,7 +45,6 @@ public class PhoneContacts {
                 int index = Collections.binarySearch(list, val);
                 if (index < 0) list.add(Math.abs(index) - 1, val);
             });
-
         });
         return list;
     }

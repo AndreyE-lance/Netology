@@ -31,8 +31,8 @@ public class Main {
             if (contact[0].equals("нет")) break;
             System.out.println("Укажите группы контакта через пробел");
             String[] groups = scanner.nextLine().split(" ");
-            for (String s: groups) {
-                pContacts.addContact(s,new Contact(contact[0]+" "+contact[1], contact[2]));
+            for (String s : groups) {
+                pContacts.addContact(s, new Contact(contact[0] + " " + contact[1], contact[2]));
             }
         }
     }
