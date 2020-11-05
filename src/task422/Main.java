@@ -1,9 +1,11 @@
+package task422;
+
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class task422 {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите математическую формулу:");
