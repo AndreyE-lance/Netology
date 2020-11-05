@@ -1,7 +1,6 @@
 package task431;
 
 import java.util.*;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class PhoneContacts {
     private Map<String, Set<Contact>> groups;
@@ -48,6 +47,6 @@ public class PhoneContacts {
             });
 
         });
-       return list;
+        return list;
     }
 }
