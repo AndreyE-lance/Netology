@@ -43,7 +43,7 @@ public class PhoneContacts {
         groups.forEach((k, v) -> {
             v.forEach(val -> {
                 int index = Collections.binarySearch(list, val);
-                if (index != 0) list.add(Math.abs(index) - 1, val);
+                if (index < 0) list.add(Math.abs(index) - 1, val);
             });
 
         });
