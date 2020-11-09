@@ -27,6 +27,6 @@ public class Main {
         candidates.add(new Candidate("Майер Алексей Петрович","м","34",5,3));
         candidates.add(new Candidate("Ведров Валерий Михайлович","м","18",4,2));
         candidates.add(new Candidate("Иванов Азат Вазитович","м","29",4,1));
-        candidates.add(new Candidate("Олегов Олег Олегович","м","39",5,4));//не добавляет
+        candidates.add(new Candidate("Олегов Олег Олегович","м","39",5,4)); //не добавляет
     }
 }
