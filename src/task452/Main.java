@@ -14,6 +14,7 @@ public class Main {
                 .thenComparing(Candidate::getRating);
         candidates = new TreeSet<>(compareByRatingAndRelevance);
         addCandidates();
+        System.out.println("ФИО, Релевантность резюме, Оценка на собеседовании");
         candidates.forEach(k-> System.out.println(k.toString()));
     }
 
@@ -27,6 +28,6 @@ public class Main {
         candidates.add(new Candidate("Майер Алексей Петрович","м","34",5,3));
         candidates.add(new Candidate("Ведров Валерий Михайлович","м","18",4,2));
         candidates.add(new Candidate("Иванов Азат Вазитович","м","29",4,1));
-        candidates.add(new Candidate("Олегов Олег Олегович","м","39",5,4)); //не добавляет
+
     }
 }
